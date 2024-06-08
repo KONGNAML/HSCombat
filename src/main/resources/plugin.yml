@@ -1,0 +1,7 @@
+name: HSCombat
+version: '${version}'
+main: org.kongit.hscombat.HSCombat
+api-version: '1.17'
+author: KONGNAML
+depend:
+  - HSLib
