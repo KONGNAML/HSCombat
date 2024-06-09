@@ -5,3 +5,4 @@ api-version: '1.17'
 author: KONGNAML
 depend:
   - HSLib
+  - ProtocolLib

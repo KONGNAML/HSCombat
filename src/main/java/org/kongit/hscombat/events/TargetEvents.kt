@@ -2,6 +2,7 @@ package org.kongit.hscombat.events
 
 import com.github.horangshop.lib.plugin.listener.HSListener
 import org.bukkit.entity.Entity
+import org.bukkit.entity.Mob
 import org.bukkit.entity.Monster
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
@@ -25,7 +26,7 @@ class TargetEvents : HSListener(HSCombat.getInstance()) {
         val entity: Entity = event.entity
         val target: Entity = event.target ?: return
 
-        if (entity is Monster && target is Player) {
+        if (entity is Mob && target is Player) {
             // 기존의 스케줄러가 있으면 취소
             targetTasks[target.uniqueId]?.cancel()
             // 새로운 스케줄러 시작

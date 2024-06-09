@@ -1,0 +1,14 @@
+
+combat:
+  keepingTime: 20
+  bossBar:
+    use: true
+    color: RED
+    title: "전투중 [ %hscombat_kill% ]"
+
+killMessage:
+  use: true
+  message: "%hscombat_target% (을)를 처치 하였습니다."
+assistMessage:
+  use: true
+  message: "%hscombat_target% (을)를 처치 하는데 기여 하였습니다. ( %hscombat_assist% % )"
